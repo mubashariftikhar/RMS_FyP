@@ -1,0 +1,466 @@
+@font-face {
+    font-family: 'PoiretOne-Regular';
+    src:url(../fonts/PoiretOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src:url(../fonts/SourceSansPro-Regular.ttf) format('truetype');
+}
+/* ======= Base ======= */
+body {
+  font-family: 'Roboto', arial, sans-serif;
+  color: #444; background:url('../images/ski.jpg');
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+a {
+  color: #ec6952;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #e74124;
+}
+a:focus {
+  text-decoration: none;
+}
+.btn,
+a.btn {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  font-weight: bold;
+}
+.btn .fa,
+a.btn .fa {
+  color: #fff;
+  margin-right: 5px;
+}
+a.btn-cta,
+.btn-cta {
+  padding: 8px 30px;
+}
+.sub-btn{    background: rgba(0, 0, 0, 0) url("../images/lg-btn.jpg") no-repeat scroll 0 0;
+    height: 110px;}
+a.btn-cta-primary,
+.btn-cta-primary {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: -7px;
+    min-height: 103px;
+    padding-top: 0;
+    text-align: center !important;
+}
+
+a.btn-ghost,
+.btn-ghost {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff !important;
+  padding: 8px 20px;
+  vertical-align: middle;
+}
+a.btn-ghost:hover,
+.btn-ghost:hover {
+  background: #4a6781;
+  border: 1px solid #4a6781;
+  color: #fff;
+}
+a.btn-ghost .fa,
+.btn-ghost .fa {
+  margin-right: 10px;
+  font-size: 22px;
+}
+a.btn-ghost .text,
+.btn-ghost .text {
+  position: relative;
+  top: -2px;
+}
+.highlight {
+  color: #ec6952;
+}
+.form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  height: 40px;
+  border-color: #eee;
+}
+.form-control::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #a6a6a6;
+}
+.form-control:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a6a6a6;
+}
+.form-control::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a6a6a6;
+}
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #a6a6a6;
+}
+.form-control:focus {
+  border-color: #e1e1e1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.text-highlight {
+  color: #952410;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+input[type="button"],
+textarea,
+select {
+  appearance: none;
+  /* for mobile safari */
+  -webkit-appearance: none;
+}
+
+/* ======= Login Page ======= */
+.has-full-screen-bg .upper-wrapper {
+  background: #253340 url('../images/ski.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.has-full-screen-bg.signup-page .upper-wrapper {
+  background: #253340 url('../images/background/bg-screen-2.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.has-full-screen-bg .header h1.logo {
+  float: none;
+  text-align: center;
+}
+.has-full-screen-bg .header h1.logo a {
+  margin: 0 auto;
+}
+.access-section {
+  padding:40px 10px 40px;
+}
+.access-section .form-box .form-box-inner {
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+ 
+}
+.access-section .form-box .title {
+ color: #fff;
+     font-size: 2.25em;
+    margin-bottom: 23px;
+    margin-top: 0; font-family: "PoiretOne-Regular";
+    padding-left: 21px;
+    text-align: left;
+}
+.sky-form label i {
+    padding-right: 9px;
+}
+.checkbox, .radio {
+    display: block;
+    font-size: 16px !important;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+.access-section.signup-section .title {
+  margin-bottom: 15px;
+}
+.access-section.signup-section .intro {
+  margin-bottom: 60px;
+}
+.access-section .form-group {
+  position: relative;
+}
+.access-section .form-group.email:before {
+  content: "\f007";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #999;
+}
+.disclaimer{ border-top: 1px solid #fff;
+    margin-top: 11px; padding-top: 10px;}
+	.copyright-txt{
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    margin-top: -14px;
+    padding-left: 24px !important;
+}
+.access-section .form-group.password:before {
+  content: "\f023";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: #999;
+}
+.access-section .form-control {
+  font-size: 16px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+.access-section .form-control::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+}
+.access-section .form-control:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+.access-section .form-control::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+.access-section .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+}
+.access-section .social-btns {
+ height: 100% !important;
+    margin-left: 0;
+    min-height: 610px;
+    padding-left: 0;  padding-right: 0;
+}
+.access-section .social-btns li {
+  margin-bottom: 10px;
+}
+.access-section .social-btns li .btn {
+  color: #fff;
+  min-width: 220px;
+  text-align: left;
+}
+.access-section .social-btns li .btn:hover {
+  color: #fff;
+}
+.access-section .social-btns li .btn .fa {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  padding-right: 10px;
+  width: 30px;
+}
+img.avatar-img{
+    margin-top: -65px;
+}
+.social-btns .divider{    background: #fff none repeat scroll 0 0;
+    margin-top: 116px;}
+	
+.resp-tab-item {
+    color: #d8dcdf !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    list-style: outside none none;
+    margin:0 5px !important;
+    outline: medium none;
+    padding: 0;
+    text-align: center;
+    transition: all 0.3s ease-out 0s;
+    width: 100%;
+}
+.form-main-title span {
+  background: #ce2331 none repeat scroll 0 0 !important;
+    border-radius: 4px;
+    color: #fff !important;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 8px 20px !important;
+}
+
+.subtitle-main {
+ color: #ed1e2e;
+    font-size: 19px;
+    padding-bottom: 10px;
+    padding-top: 3px;
+    text-align: center;
+}
+.access-section .twitter-btn {
+  background: #55acee;
+}
+.access-section .twitter-btn:hover {
+  background: #2795e9;
+}
+.access-section .facebook-btn {
+  background: #3b5998;
+}
+.access-section .facebook-btn:hover {
+  background: #2d4373;
+}
+.access-section .google-btn {
+  background: #dd4b39;
+}
+.access-section .google-btn:hover {
+  background: #c23321;
+}
+.access-section .github-btn {
+  background: #444;
+}
+.access-section .github-btn:hover {
+  background: #2b2b2b;
+}
+.access-section .forgot-password {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.access-section .forgot-password a {
+  color: #999;
+}
+.access-section .forgot-password a:hover {
+  text-decoration: underline;
+  color: #ec6952;
+}
+.access-section .divider {
+  border-left: none;
+  margin-bottom: 30px;
+  position: static;
+}
+.access-section .divider span {
+  background: #fff;
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+  top: inherit;
+  text-transform: uppercase;
+  color: #999;
+}
+.access-section .divider:before {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  height: 1px;
+  width: 100%;
+}
+.misc-container {
+  margin: auto;
+    padding-left: 28px;
+    text-align: center;
+    width: 91%;
+}
+.misc-container .checkbox.remember{
+    float: left;
+}
+.misc-container p.forgot-password {
+    padding-top: 13px;
+}
+.sub-btn{
+    margin: auto auto auto 70px;
+    text-align: center;
+    width: 70%;
+}
+.login-form input[type="email"]:focus,input[type="password"]:focus{ border:1px solid #CE2331;}
+.login-form .form-group.email,.login-form .form-group.password{
+    margin: auto auto 8px;
+    padding-left: 7px;
+    width: 73%;
+}
+
+.access-section .social-btns {
+  padding-left: 0;
+  text-align: center;
+}
+.access-section .social-btns .btn {
+  min-width: 100%;
+}
+.access-section .social-btns .social-login {
+  display: inline-block;
+  margin: 0 auto;
+}
+.access-section .note {
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.access-section .btn + .note {
+  margin: 15px 0;
+}
+.access-section .remember label {
+  font-size: 14px;
+  color: #666;
+}
+.access-section .lead {
+  font-size: 14px;
+  color: #999;
+  margin-top: 30px;
+}
+.project-by{
+    margin: auto;
+    width: 61%;
+}
+.project-by > img{
+    float: left;
+    padding-right: 5px;
+}
+.project-by > p {
+    color: #fff;
+    padding-top: 12px;
+}.action-title-container img{
+    padding-right: 10px;
+}
+.action-title-container{  margin-top: 18px;}
+.desc-container{background: #f04f4f none repeat scroll 0 0;
+    padding:48px 35px;}
+	.sky-form .radio {
+   border: medium none;
+    color: #fff;
+    cursor: pointer;
+    float: left; 
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-top: 0;
+    outline: medium none;
+    padding-left: 18px;
+    width: 47%;
+}
+.clear{clear:both;}
+.col-md-offset-2 {
+    margin-left: 3.667% !important;
+}
+.social-btns{ background:url('../images/gbridge1.jpg');}

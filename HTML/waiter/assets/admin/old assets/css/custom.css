@@ -1,0 +1,97 @@
+.table-forms{
+    margin-bottom: 30px  !important;
+    padding-bottom: 30px; 
+    border-left: 4px solid #ec407a;
+    background: #fff;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+.table-forms h1{
+     color: #ec407a;
+}
+.colored-thead{
+    background-color: #00acc1 !important;
+    color: #fff;
+     border-left: 4px solid #ec407a;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+.colored-thead th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.colored-thead th:first-child{
+    padding-left: 10px;
+}
+.action-buttons .btn-danger{
+    background-color: #00acc1;
+    padding: 7px 10px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    font-size: 18px;
+}
+.action-buttons .btn-primary{
+    background-color: #ec407a;
+    padding: 7px 10px;
+    margin-left: 0;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+}
+.results-p{
+    color: #999; margin-top: 0;
+}
+.forms-top-btn-col{
+    margin-top: 30px;
+}
+.forms-top-btn-col .btn{
+    float: right;
+    padding: 2px 15px;
+    margin-right: 5px;
+    height: auto;
+    text-transform: lowercase;
+}
+.forms-top-btn-col .btn:first-letter{
+   text-transform: uppercase;
+}
+.forms-top-btn-col .btn i{
+    color: #f6f6f6;
+}
+.forms-top-btn-col .btn span{
+      background: #666   !important;
+      border-radius: 100%;
+      padding: 5px;
+}
+.template-heading h1{
+    font-size: 22px;
+}
+.border-LR-pink{
+      border-left: 4px solid #ec407a;
+        border-right: 4px solid #ec407a;
+        
+}
+.template-form-field{
+    padding-right: 10px;
+    color: #fff !important;
+}
+.template-form-field label, .input-field{
+   color: #fff !important;
+   border-color: #fff !important;
+}
+.template-form-field .inner{
+      border-left: 4px solid #ec407a;
+    background: #16667f;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.create-template-ckeidtor-section{
+    margin-top: 30px;
+    margin-bottom:30px;
+    padding-left: 17px;
+}
+.margin-t20{
+    margin-top: 30px;
+}

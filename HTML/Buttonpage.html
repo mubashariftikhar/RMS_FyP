@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main | Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../Bootstarp/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../Bootstarp/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="./../CSS/ButtonPage.css" />
+    <link rel="shortcut icon" href="./../Images/logo.jpg" type="image/x-icon">
+<body>
+<div id="loginbox">
+    <form method="post" id="loginform" class="form-vertical" action="waiter.html">
+        <!--  -->
+        <div class="control-group normal_text">
+            <h4 style="margin-left: 20px; font-size: 18px;">Hujra Restaurant</h4>
+            <div style="position: absolute; width:60%; margin-left: 95px; margin-top: -60px; display: none" class="alert alert-warning msg"></div>
+        </div>
+      
+        <!--  -->
+        <div align ="center" style="margin-top: 20px">
+           <img src="./../Images/Hlogo123.png" >
+        </div>
+
+        <div class="control-group text-center fw-bold">
+            <a href="./Login.html">
+            <button type="button" class="btn btn-primary btn-lg fw-bold" id="btn-admin" >Admin</button>
+        </a>
+        </div>
+        <!--  -->
+        <div class="control-group text-center">
+            <a href="./Login.html">
+            <button type="button" class="btn btn-primary btn-lg" id="btn-kitchen">Kitchen</button>
+            </a>
+        </div>
+        <!--  -->
+        <div class="control-group text-center">
+            <a href="./Login.html">
+            <button type="button" class="btn btn-primary btn-lg"  id="btn-waiter">Waiter</button>
+            </a>
+        </div>
+        <div class="form-actions">
+            <!-- <span class="pull-right"><input type="submit" class="btn btn-success" value="Login" /></span> -->
+        </div>
+    </form>
+</div>
+<script src="./../JavaScript/jquery.min.js"></script>
+<script src="./../JavaScript/login.js"></script>
+
+</body>
+</html>

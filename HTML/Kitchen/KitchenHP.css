@@ -1,0 +1,159 @@
+
+
+body {
+
+    background: #ffffff;
+    color: white;
+    font-size: 15px;
+
+}
+
+.title {
+    background: #ffffff;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.contain {
+
+    margin: 10px;
+}
+
+/*    #leftpanel {
+background-color: rgba(65, 39, 17, 0.8);
+color: white;
+width: 30%;
+border: 1px;
+margin: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+float: left;
+}*/
+
+/* .qida {
+    background: #deb87;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+
+} */
+
+.yemek,
+.icki {
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.yemek p,
+.icki p {
+    cursor: pointer;
+}
+
+/* #rightpanel {
+
+background: #ffffff;
+color: white;
+width: 58%;
+margin: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+float: right;
+height: 689px;
+}*/
+
+.circles {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    /*
+    border: 2px solid grey;*/
+    border-radius: 100%;
+    background: #ef432b;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.circles p {
+    position: relative;
+    top: 50px;
+    width: 100px;
+    margin: auto;
+    word-wrap: break-word;
+
+}
+
+.circles span {
+    position: relative;
+    top: 50px;
+    width: 100px;
+    margin: auto;
+}
+
+
+.circles-result {
+    border: 1px dotted #47a301;
+    margin: 10px;
+    min-height: 20px;
+
+}
+
+.circles-result p {
+    word-wrap: break-word;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.circles-result p span {
+    background: #b0c4de;
+    color: #191970;
+    cursor: pointer;
+}
+
+.circles-result span {
+    background: #dcdcdc;
+    color: #ffffff;
+    margin-left: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.hesab {
+    outline: none;
+    background: #778899;
+    color: #ffffff;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+.faizan {
+    width: 100% !important;
+    height: 65rem;
+    /* position: relative; */
+}
+
+.logout {
+    /* position: absolute;
+top: 45rem;
+right: 30rem; */
+    height: 0ren;
+    /* width: 11rem; */
+    background-color: #47a301;
+    color: white;
+    font-weight: 700;
+}

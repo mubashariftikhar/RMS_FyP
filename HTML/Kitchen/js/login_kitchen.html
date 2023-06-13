@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HR | Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../../Bootstarp/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../../Bootstarp/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="./../../CSS/LoginCss.css" />
+    <link rel="shortcut icon" href="./../../Images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+    <div id="loginbox">
+        <form method="post" id="loginform" class="form-vertical">
+            <div class="control-group normal_text">
+                <h4 style="margin-left: 20px; font-size: 18px;">Hujra Restaurant</h4>
+                <div style="position: absolute; width:60%; margin-left: 95px; margin-top: -60px; display: none"
+                    class="alert alert-warning msg"></div>
+            </div>
+            <div align="center" style="margin-top: 20px">
+                <img src="./../../Images/Hlogo123.png">
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on"><i class="icon-user"></i></span><input type="email" placeholder="Email/id"
+                            name="email" id="email" />
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on"><i class="icon-lock"></i></span><input type="password"
+                            placeholder="Password" name="password" id="password" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <span class="pull-right"><input type="submit" class="btn btn-success" value="Login" /></span>
+            </div>
+        </form>
+    </div>
+    <script src="./../../JavaScript/jquery.min.js"></script>
+    <script src="./../../JavaScript/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.all.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+
+
+    <script src="./js/firebaseConnection_kitchen.js"></script>
+</body>
+
+</html>
