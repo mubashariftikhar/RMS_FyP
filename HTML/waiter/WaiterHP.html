@@ -192,9 +192,11 @@
         src="assets/admin/login-home/plugins/jquery-placeholder/jquery.placeholder.js"></script>
 
     <!-- <script src="./firebaseData.js"></script> -->
+    <script src="./assets/js/bundle.js?ver=2.5.0"></script>
+    <script src="./assets/js/scripts.js?ver=2.5.0"></script>
+    <script src="./assets/js/charts/chart-ecommerce.js?ver=2.5.0"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
-
     <script>
         const firebaseConfig = {
             apiKey: "AIzaSyBqtWhz7DJEZMcvbX-knY6Fxl-3JNWt_RI",
@@ -221,15 +223,7 @@
                 const waiterDataTable = $('#waiterDataTable').val();
                 const waiterDataTime = $('#waiterDataTime').val();
                 // getting resturant id
-                db.collection('waiters')
-                    .where('userId', '==', user.id)
-                    .get()
-                    .then((querySnapshot) => {
-                        console.log("connected")
-
-                        if (!querySnapshot.empty) {
-                            const doc = querySnapshot.docs[0];
-                            console.log(doc.id)
+                
                             const data = {
                                 "billNo": waiterDataBillNo,
                                 "date": waiterDataDate,
@@ -239,18 +233,18 @@
                                 "quantity": waiterDataQuantity,
                                 "table": waiterDataTable,
                                 "time": waiterDataTime,
-                                "resturantId": doc.id.toString()
+                                "waiterId": user.id
                             }
                             db.collection('waiterData').add(data)
                                 .then(function (docRef) {
                                     // Display success message using SweetAlert
-                                    Swal.fire({
-                                        icon: 'success',
-                                        title: 'Success',
-                                        text: 'Data added to Firestore successfully!',
-                                        timer: 3000,
-                                        showConfirmButton: false
-                                    });
+                                    // Swal.fire({
+                                    //     icon: 'success',
+                                    //     title: 'Success',
+                                    //     text: 'Data added to Firestore successfully!',
+                                    //     timer: 3000,
+                                    //     showConfirmButton: false
+                                    // });
                                     // Reset the form
                                     // $('#alarmingSituation')[0].reset();
                                     //    window.href = "./"
@@ -258,18 +252,15 @@
                                 })
                                 .catch(function (error) {
                                     // Display error message using SweetAlert
-                                    Swal.fire({
-                                        icon: 'error',
-                                        title: 'Error',
-                                        text: 'Failed to add data to Firestore!',
-                                        timer: 3000,
-                                        showConfirmButton: false
-                                    });
-                                });
-                        } else {
-                            console.log('No restaurant found with the provided user ID.');
-                        }
-                    })
+                                    // Swal.fire({
+                                    //     icon: 'error',
+                                    //     title: 'Error',
+                                    //     text: 'Failed to add data to Firestore!',
+                                    //     timer: 3000,
+                                    //     showConfirmButton: false
+                                    // });
+                                })
+                        
                     .catch((error) => {
                         console.log('Error getting restaurants: ', error);
                     });
@@ -293,7 +284,7 @@
     </script>
 
 </body>
-<script src="../../assets/js/firebaseidelem.js"></script>
+
 
 
 </html>
