@@ -1,175 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+    <link
+        href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300'
+        rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/admin/login-home/plugins/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/admin/login-home/plugins/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/admin/login-home/css/login-home.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/admin/login-home/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/admin/login-home/plugins/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="assets/admin/login-home/css/login-home.css" />
     <title>Waiter Home Page</title>
 </head>
+
 <body class="login-page access-page has-full-screen-bg">
-<div class="upper-wrapper">
+    <div class="upper-wrapper">
 
-    <!-- ******Login Section****** -->
-    <section class="login-section access-section section">
-        <div class="container">
-            <div class="row">
-                <div class="form-box   col-xs-12 col-md-12">
-                    <div class="form-box-inner">
-                        <div class="row">
-                            <div class="form-container  col-xs-2 col-md-2;">
-                                <table class="table table-bordered" style="background-color:rgba(23, 22, 22, 0.95); color: white">
-                                    <thead><th style="text-align: center; font-weight: bold;">Tables</th></thead>
-                                    <tbody style="text-align:center">
-                                    <tr style="color: green; font-weight: bold"><td>T-1</td></tr>
-                                    <tr style="color: green; font-weight: bold"><td>T-2</td></tr>
-                                    <tr style="color: #ff0000; font-weight: bold"><td>T-3</td></tr>
-                                    <tr style="color: #ff0000; font-weight: bold"><td>T-4</td></tr>
-                                    <tr style="color: green; font-weight: bold"><td>T-5</td></tr>
-                                    <tr style="color: #ff0000; font-weight: bold"><td>T-6</td></tr>
-                                    <tr style="color: green; font-weight: bold"><td>T-7</td></tr>
-                                    <tr style="color: green; font-weight: bold"><td>T-8</td></tr>
-                                    <tr style="color: #ff0000; font-weight: bold"><td>T-9</td></tr>
-                                    <tr style="color: #ff0000; font-weight: bold"><td>T-10</td></tr>
-                                    <tr style="color: #ff0000; font-weight: bold"><td>T-11</td></tr>
-                                    <tr style="color: green; font-weight: bold"><td>T-12</td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
+        <!-- ******Login Section****** -->
+        <section class="login-section access-section section">
+            <div class="container">
+                <div class="row">
+                    <div class="form-box   col-xs-12 col-md-12">
+                        <div class="form-box-inner">
+                            <div class="row">
+                                <div class="form-container  col-xs-2 col-md-2;">
+                                    <table class="table table-bordered"
+                                        style="background-color:rgba(23, 22, 22, 0.95); color: white">
+                                        <thead>
+                                            <th style="text-align: center; font-weight: bold;">Tables</th>
+                                        </thead>
+                                        <tbody style="text-align:center">
+                                            <tr style="color: green; font-weight: bold">
+                                                <td>T-1</td>
+                                            </tr>
+                                            <tr style="color: green; font-weight: bold">
+                                                <td>T-2</td>
+                                            </tr>
+                                            <tr style="color: #ff0000; font-weight: bold">
+                                                <td>T-3</td>
+                                            </tr>
+                                            <tr style="color: #ff0000; font-weight: bold">
+                                                <td>T-4</td>
+                                            </tr>
+                                            <tr style="color: green; font-weight: bold">
+                                                <td>T-5</td>
+                                            </tr>
+                                            <tr style="color: #ff0000; font-weight: bold">
+                                                <td>T-6</td>
+                                            </tr>
+                                            <tr style="color: green; font-weight: bold">
+                                                <td>T-7</td>
+                                            </tr>
+                                            <tr style="color: green; font-weight: bold">
+                                                <td>T-8</td>
+                                            </tr>
+                                            <tr style="color: #ff0000; font-weight: bold">
+                                                <td>T-9</td>
+                                            </tr>
+                                            <tr style="color: #ff0000; font-weight: bold">
+                                                <td>T-10</td>
+                                            </tr>
+                                            <tr style="color: #ff0000; font-weight: bold">
+                                                <td>T-11</td>
+                                            </tr>
+                                            <tr style="color: green; font-weight: bold">
+                                                <td>T-12</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Buttons and There Boxes-->
+                                <div class="form-container  col-xs-9 col-md-9"
+                                    style="background: rgba(50, 35, 30, 0.79); padding: 0 35px">
+                                    <div class="clear"></div>
+                                    <div class="logo-top action-title-container" style="padding:20px 0px;">
+                                        <form id="waiterDataForm" class="" name="form-work" action="#">
+                                            <br>
+                                            <div class="form-group row">
+                                                <label for="billno" class="col-sm-1 col-form-label">Bill No</label>
+                                                <div class="col-sm-3">
+                                                    <input id="waiterDataBillNo" type="text" class="form-control"
+                                                        id="billno" placeholder="Bill No">
+                                                </div>
+                                                <label for="date" class="col-sm-1 col-form-label">Date</label>
+                                                <div class="col-sm-3">
+                                                    <input id="waiterDataDate" type="text" class="form-control"
+                                                        id="date" placeholder="DD/MM/Year">
+                                                </div>
 
-                            <div class="form-container  col-xs-9 col-md-9" style="background: rgba(50, 35, 30, 0.79); padding: 0 35px">
-                                <div class="clear"></div>
-                                <div class="logo-top action-title-container" style="padding:20px 0px;">
-                                    <form id="form-work" class="" name="form-work" action="#">
-                                        <br>
-                                        <div class="form-group row">
-                                            <label for="billno" class="col-sm-1 col-form-label">Bill No</label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="form-control" id="billno" placeholder="#458753" readonly>
+                                                <label for="inputPassword3" class="col-sm-1 col-form-label">Time</label>
+                                                <div class="col-sm-3">
+                                                    <input id="waiterDataTime" type="text" class="form-control"
+                                                        id="inputPassword3" placeholder="H:M">
+                                                </div>
                                             </div>
-                                            <label for="date" class="col-sm-1 col-form-label">Date</label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="form-control" id="date" placeholder="29/11/2017" readonly>
-                                            </div>
-
-                                            <label for="inputPassword3" class="col-sm-1 col-form-label">Time</label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="11:35" readonly>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="inputEmail3" class="col-sm-1 col-form-label">Name</label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
-                                            </div>
-                                            <label for="inputPassword3" class="col-sm-1 col-form-label">Mobile</label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="+923409883809">
-                                            </div>
-                                            <label for="inputPassword3" class="col-sm-1 col-form-label">Table</label>
-                                            <div class="col-sm-3">
-                                                <select class="form-control" name="table">
-                                                    <option>Select Table</option>
-                                                    <option>T-1</option>
-                                                    <option>T-2</option>
-                                                    <option>T-3</option>
-                                                    <option>T-4</option>
-                                                    <option>T-5</option>
-                                                    <option>T-6</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div style="background:linear-gradient(rgba(211, 90, 58, 0.88), rgba(211, 90, 58, 0.88)); padding:10px 10px;">
-                                            <div class="form-group row " style="margin-top: 1%;" >
-                                                <label for="inputPassword3" class="col-sm-1 col-form-label">Menu</label>
-                                                <div class="col-sm-2">
-                                                    <select class="form-control" name="table">
-                                                        <option>Select Menu</option>
-                                                        <option>M-1</option>
-                                                        <option>M-2</option>
-                                                        <option>M-3</option>
-                                                        <option>M-4</option>
-                                                        <option>M-5</option>
-                                                        <option>M-6</option>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-sm-1 col-form-label">Name</label>
+                                                <div class="col-sm-3">
+                                                    <input id="waiterDataName" type="text" class="form-control"
+                                                        id="inputEmail3" placeholder="Name">
+                                                </div>
+                                                <label for="inputPassword3"
+                                                    class="col-sm-1 col-form-label">Mobile</label>
+                                                <div class="col-sm-3">
+                                                    <input id="waiterDataMobile" type="text" class="form-control"
+                                                        id="inputPassword3" placeholder="+92-----------">
+                                                </div>
+                                                <label for="inputPassword3"
+                                                    class="col-sm-1 col-form-label">Table</label>
+                                                <div class="col-sm-3">
+                                                    <select id="waiterDataTable" class="form-control" name="table">
+                                                        <option>Select Table</option>
+                                                        <option>T-1</option>
+                                                        <option>T-2</option>
+                                                        <option>T-3</option>
+                                                        <option>T-4</option>
+                                                        <option>T-5</option>
+                                                        <option>T-6</option>
                                                     </select>
                                                 </div>
+                                            </div>
 
-                                                <label for="qty" class="col-sm-1 col-form-label">QTY</label>
-                                                <div class="col-sm-2">
-                                                    <input type="number" class="form-control" id="qty"  placeholder="Quantity" style="height:35px;border-radius: 0px">
+                                            <div
+                                                style="background:linear-gradient(rgba(211, 90, 58, 0.88), rgba(211, 90, 58, 0.88)); padding:10px 10px;">
+                                                <div class="form-group row " style="margin-top: 1%;">
+                                                    <label for="inputPassword3"
+                                                        class="col-sm-1 col-form-label">Menu</label>
+                                                    <div class="col-sm-2">
+                                                        <select id="waiterDataMenu" class="form-control" name="table">
+                                                            <option>Select Menu</option>
+                                                            <option>M-1</option>
+                                                            <option>M-2</option>
+                                                            <option>M-3</option>
+                                                            <option>M-4</option>
+                                                            <option>M-5</option>
+                                                            <option>M-6</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <label for="qty" class="col-sm-1 col-form-label">QTY</label>
+                                                    <div class="col-sm-2">
+                                                        <input id="waiterDataQuantity" type="number"
+                                                            class="form-control" id="qty" placeholder="Quantity"
+                                                            style="height:35px;border-radius: 0px">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <button id="hit" class="btn btn-default btn-md"
+                                                            type="button">Add</button>
+                                                    </div>
                                                 </div>
-                                                <div class="col-sm-2">
-                                                    <button id="hit" class="btn btn-default btn-md" type="button" >Add</button>
+                                            </div>
+                                            <br>
+                                            <fieldset style="border:1px solid #dadada;padding:5px">
+                                                <div class="table-responsive">
+                                                    <table class="table " id="myTable">
+                                                        <tr style="background: #CE2331">
+                                                            <th>ITEM CODE</th>
+                                                            <th>ITEM NAME</th>
+                                                            <th>QUANTITY</th>
+                                                            <th>ACTIONS</th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </fieldset>
+                                            <br>
+                                            <div class="form-group">
+                                                <div class="col-md-4 col-md-offset-4 ">
+                                                    <input type="submit" class="btn btn-block bg-brown" id="btnn"
+                                                        value="Order Now">
                                                 </div>
                                             </div>
-                                        </div>
-                                        <br>
-                                        <fieldset style="border:1px solid #dadada;padding:5px">
-                                            <div class="table-responsive">
-                                                <table class="table " id="myTable">
-                                                    <tr style="background: #CE2331">
-                                                        <th>ITEM CODE</th>
-                                                        <th>ITEM NAME</th>
-                                                        <th>QUANTITY</th>
-                                                        <th>ACTIONS</th>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </fieldset>
-                                        <br>
-                                        <div class="form-group">
-                                            <div class="col-md-4 col-md-offset-4 ">
-                                                <input type="submit" class="btn btn-block bg-brown" id="btnn" value="Order Now" >
-                                            </div>
-                                        </div>
-                                        <br>
-                                    </form>
-                                    <a onclick="LogOut()" class="text-center " style="display: block;color: #fff5df;cursor: pointer !important;"><i class="fa fa-sign-out"></i> Logout Here</a>
-                                </div>
-                                <div class="clear"></div>
-                            </div><!--//form-container-->
-                        </div><!--//form-box-->
-                    </div><!--//row-->
-                </div><!--//container-->
-    </section><!--//contact-section-->
-</div><!--//upper-wrapper-->
+                                            <br>
+                                        </form>
+                                        <!--Log out button-->
+                                        <a onclick="LogOut()" class="text-center "
+                                            style="display: block;color: #fff5df;cursor: pointer !important;"><i
+                                                class="fa fa-sign-out"></i> Logout Here</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div><!--//form-container-->
+                            </div><!--//form-box-->
+                        </div><!--//row-->
+                    </div><!--//container-->
+        </section><!--//contact-section-->
+    </div><!--//upper-wrapper-->
 
-<!-- Javascript -->
-<script type="text/javascript" src="assets/admin/login-home/plugins/jquery-1.12.3.min.js"></script>
-<script type="text/javascript" src="assets/admin/login-home/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/admin/login-home/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/admin/login-home/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/admin/login-home/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="assets/admin/login-home/plugins/jquery-placeholder/jquery.placeholder.js"></script>
 
+    <!-- <script src="./firebaseData.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
 
-<script>
-    $(document).ready(function() {
-        $('#hit').click(function() {
-            $itemName = ($('#item').val());
-            $quantity = ($('#qty').val());
-            $('#myTable tr:last').after('<tr class="tbody"><td>'+$itemName+'</td><td class="recepie">Chicken With White Handy etc</td><td>'+$quantity +'</td><td class="remove"><a href="#" ><i class="fa fa-close"></i></a></td></tr>');
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBqtWhz7DJEZMcvbX-knY6Fxl-3JNWt_RI",
+            authDomain: "rmsystem-45a87.firebaseapp.com",
+            projectId: "rmsystem-45a87",
+            storageBucket: "rmsystem-45a87.appspot.com",
+            messagingSenderId: "204748760785",
+            appId: "1:204748760785:web:907286c86e5af921f3c7f0",
+            measurementId: "G-DWT7V8RV5V",
+            databaseURL: "https://rmsystem.firebaseio.com",
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        const user = JSON.parse(sessionStorage.getItem('user'))
+        $(document).ready(function () {
+            $('#hit').click(function () {
+                console.log("button click")
+                const waiterDataBillNo = $('#waiterDataBillNo').val();
+                const waiterDataDate = $('#waiterDataDate').val();
+                const waiterDataMenu = $('#waiterDataMenu').val();
+                const waiterDataMobile = $('#waiterDataMobile').val();
+                const waiterDataName = $('#waiterDataName').val();
+                const waiterDataQuantity = $('#waiterDataQuantity').val();
+                const waiterDataTable = $('#waiterDataTable').val();
+                const waiterDataTime = $('#waiterDataTime').val();
+                // getting resturant id
+                db.collection('waiters')
+                    .where('userId', '==', user.id)
+                    .get()
+                    .then((querySnapshot) => {
+                        console.log("connected")
+
+                        if (!querySnapshot.empty) {
+                            const doc = querySnapshot.docs[0];
+                            console.log(doc.id)
+                            const data = {
+                                "billNo": waiterDataBillNo,
+                                "date": waiterDataDate,
+                                "menu": waiterDataMenu,
+                                "mobile": waiterDataMobile,
+                                "name": waiterDataName,
+                                "quantity": waiterDataQuantity,
+                                "table": waiterDataTable,
+                                "time": waiterDataTime,
+                                "resturantId": doc.id.toString()
+                            }
+                            db.collection('waiterData').add(data)
+                                .then(function (docRef) {
+                                    // Display success message using SweetAlert
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Success',
+                                        text: 'Data added to Firestore successfully!',
+                                        timer: 3000,
+                                        showConfirmButton: false
+                                    });
+                                    // Reset the form
+                                    // $('#alarmingSituation')[0].reset();
+                                    //    window.href = "./"
+                                    location.reload();
+                                })
+                                .catch(function (error) {
+                                    // Display error message using SweetAlert
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Error',
+                                        text: 'Failed to add data to Firestore!',
+                                        timer: 3000,
+                                        showConfirmButton: false
+                                    });
+                                });
+                        } else {
+                            console.log('No restaurant found with the provided user ID.');
+                        }
+                    })
+                    .catch((error) => {
+                        console.log('Error getting restaurants: ', error);
+                    });
+            });
+            $('body').on('click', '.remove', function () {
+                $(this).closest('tr').remove();
+
+            });
+
         });
-        $('body').on('click','.remove',function(){
-            $(this).closest('tr').remove();
-
-        });
-
-    });
-</script>
+    </script>
+    <!--LogOut Backend-->
     <script>
         function LogOut() {
             var userSession = sessionStorage.getItem('user')
-            if(userSession){
-              sessionStorage.removeItem('user');
+            if (userSession) {
+                sessionStorage.removeItem('user');
             }
-            window.location.href="../Buttonpage.html";
+            window.location.href = "../Buttonpage.html";
         }
     </script>
 
 </body>
 <script src="../../assets/js/firebaseidelem.js"></script>
-<script src="./firebaseData.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+
 </html>
+   

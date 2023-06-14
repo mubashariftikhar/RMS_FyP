@@ -12,7 +12,6 @@
     };
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
-// test for commit
     const user = JSON.parse(sessionStorage.getItem('user'))
 
     $('#waiterDataForm').on('submit', function (event) {

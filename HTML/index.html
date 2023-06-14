@@ -215,7 +215,7 @@
                                                         </div>
                                                         <div class="data">
                                                             <div class="data-group">
-                                                                <div class="amount">1,945</div>
+                                                                <div class="amount">50</div>
                                                                 <div class="nk-ecwg6-ck">
                                                                     <canvas class="ecommerce-line-chart-s3"
                                                                         id="todayOrders"></canvas>
@@ -240,7 +240,7 @@
                                                         </div>
                                                         <div class="data">
                                                             <div class="data-group">
-                                                                <div class="amount">2,338</div>
+                                                                <div class="amount">2,338 RS</div>
                                                                 <div class="nk-ecwg6-ck">
                                                                     <canvas class="ecommerce-line-chart-s3"
                                                                         id="todayRevenue"></canvas>
@@ -265,7 +265,7 @@
                                                         </div>
                                                         <div class="data">
                                                             <div class="data-group">
-                                                                <div class="amount">847</div>
+                                                                <div class="amount">15</div>
                                                                 <div class="nk-ecwg6-ck">
                                                                     <canvas class="ecommerce-line-chart-s3"
                                                                         id="todayCustomers"></canvas>
@@ -290,7 +290,7 @@
                                                         </div>
                                                         <div class="data">
                                                             <div class="data-group">
-                                                                <div class="amount">23,485</div>
+                                                                <div class="amount">10</div>
                                                                 <div class="nk-ecwg6-ck">
                                                                     <canvas class="ecommerce-line-chart-s3"
                                                                         id="todayVisitors"></canvas>
@@ -342,3 +342,98 @@
 </body>
 
 </html>
+ <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="./assets/js/charts/chart-ecommerce.js?ver=2.5.0"></script>
+
+<script>
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBqtWhz7DJEZMcvbX-knY6Fxl-3JNWt_RI",
+            authDomain: "rmsystem-45a87.firebaseapp.com",
+            projectId: "rmsystem-45a87",
+  // ...
+};
+
+firebase.initializeApp(firebaseConfig);
+
+
+// // Function to get collection value from Firestore
+// async function getCollectionValue(collectionName) {
+//   try {
+//     // Access the Firestore database
+//     const db = firebase.firestore();
+//     // console.log(db)
+
+//     // Retrieve the collection
+//     const collectionRef = db.collection('kitchenStaff');
+// console.log(collectionRef   )
+//         // Get the documents in the collection
+//     const querySnapshot = await collectionRef.get();
+
+//     // Loop through each document and store the values in an array
+//     const values = [];
+//     querySnapshot.forEach((doc) => {
+//       // Assuming your documents have a field called 'value'
+//       const value = doc.data().value;
+//       values.push(value);
+//     });
+//     console.log(values)
+
+//     // Return the array of values
+//     return values;
+//   } catch (error) {
+//     console.error('Error getting collection value:', error);
+//     throw error;
+//   }
+// }
+
+// // Usage example
+// const collectionName = 'kitchenStaff';
+// getCollectionValue(collectionName)
+//   .then((values) => {
+//     console.log('Collection values:', values);
+//   })
+//   .catch((error) => {
+//     console.error('Error:', error);
+//   });
+
+// console.log(collectionName)
+
+// Function to fetch all collection names from Firestore
+async function fetchAllCollections() {
+  try {
+    // Access the Firestore database
+    const db = firebase.firestore();
+
+    // Fetch all collections
+    const collections = await db.listCollections();
+console.log()
+    // Extract the collection names
+    const collectionNames = collections.map((collection) => collection.id);
+
+    // Return the collection names
+    return collectionNames;
+  } catch (error) {
+    console.error('Error fetching collections:', error);
+    throw error;
+  }
+}
+
+// Usage example
+fetchAllCollections()
+  .then((collectionNames) => {
+    console.log('Collections:', collectionNames);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+        function LogOut() {
+            var userSession = sessionStorage.getItem('user')
+            if(userSession){
+              sessionStorage.removeItem('user');
+            }
+            window.location.href="./HTML/Buttonpage.html";
+        }
+    </script> -->
